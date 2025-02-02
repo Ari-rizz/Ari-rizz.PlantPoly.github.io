@@ -461,14 +461,14 @@ option {
     opacity: 0;
 }
 }
-.blog-rain1 { left: 10%; animation-delay: 0.2s; }
+.blog-rain1 { left: 10%; animation-delay: 0.2s; animation-duration: 0.9s;}
 .blog-rain2 { left: 20%; animation-delay: 0.5s; }
 .blog-rain3 { left: 30%; animation-delay: 0.4s; }
 .blog-rain4 { left: 40%; animation-delay: 0.8s; }
 .blog-rain5 { left: 50%; animation-delay: 0.1s; }
-.blog-rain6 { left: 60%; animation-delay: 1.2s; }
+.blog-rain6 { left: 60%; animation-delay: 1.2s;  animation-duration: 0.9s;}
 .blog-rain7 { left: 70%; animation-delay: 0.3s; }
-.blog-rain8 { left: 80%; animation-delay: 0.7s; }
+.blog-rain8 { left: 80%; animation-delay: 0.7s; animation-duration: 0.9s; }
 .blog-rain9 { left: 90%; animation-delay: 0.8s; }
 
 #blog {
