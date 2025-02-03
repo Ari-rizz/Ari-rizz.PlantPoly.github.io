@@ -20,7 +20,7 @@ function Contact() {
                 <select id="contact-reason" name="contact-reason" required>
                     <option value="" disabled selected>Please select a reason</option>
                     <option value="Questions">Questions</option>
-                    <option value="Information">Information</option>
+                    <option value="Pricing">Pricing</option>
                     <option value="Collaboration">Collaboration</option>
                     <option value="Investment">Investment</option>
                     <option value="Other">Other</option>

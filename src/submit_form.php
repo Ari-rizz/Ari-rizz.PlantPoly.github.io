@@ -7,16 +7,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
    
-    $to = "post.aissistant@gmail.com"; 
-    $subject = "Ny melding fra kontaktskjema";
+    $to = "hello@plant-poly.org"; 
+    $subject = "New Response";
     $body = "Navn: $name\nE-post: $email\nMelding:\n$message"; 
-    $headers = "From: no-reply@ai-assistant.com" . "\r\n" .
+    $headers = "From: no-reply@plant-poly.org" . "\r\n" .
                "Reply-To: $email" . "\r\n" .
                "X-Mailer: PHP/" . phpversion();
 
     // Send e-posten
     if (mail($to, $subject, $body, $headers)) { 
-        header("Location: /comfirmation.html"); 
+        header("Location: /"); 
         exit;
     } else {
         echo "Beklager, meldingen din kunne ikke sendes. Prøv igjen senere."; 

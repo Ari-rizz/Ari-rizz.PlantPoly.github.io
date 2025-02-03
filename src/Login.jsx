@@ -6,6 +6,7 @@ function Login({ setIsAuthenticated }) {
     const navigate = useNavigate();
 
     const handleLogin = () => {
+        console.log(credentials); 
         fetch('http://localhost:5001/login', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -16,27 +17,27 @@ function Login({ setIsAuthenticated }) {
             if (data.token) {
                 localStorage.setItem('token', data.token);
                 setIsAuthenticated(true);
-                navigate('/blog'); 
+                navigate('/blog');
             } else {
                 alert('❌ Feil brukernavn eller passord');
             }
         })
         .catch(error => console.error('❌ Feil ved innlogging:', error));
     };
-
+  
     return (
         <section id="login">
             <div className="login-container">
                 <h2>Admin Login</h2>
                 <input 
                     type="text" 
-                    placeholder="Brukernavn" 
+                    placeholder="Username" 
                     value={credentials.username} 
                     onChange={(e) => setCredentials({ ...credentials, username: e.target.value })} 
                 />
                 <input 
                     type="password" 
-                    placeholder="Passord" 
+                    placeholder="Password" 
                     value={credentials.password} 
                     onChange={(e) => setCredentials({ ...credentials, password: e.target.value })} 
                 />

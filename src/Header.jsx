@@ -17,7 +17,7 @@ function Header() {
     };
   }, []);
 
-  // Funksjon for å navigere til forsiden og rulle til ønsket seksjon
+
   const navigateToHomeAndScroll = (id) => {
     if (location.pathname !== '/') {
       navigate('/');
@@ -26,7 +26,7 @@ function Header() {
         if (section) {
           section.scrollIntoView({ behavior: 'smooth' });
         }
-      }, 100); // Vent litt for å sikre at siden har lastet
+      }, 100); 
     } else {
       const section = document.getElementById(id);
       if (section) {
@@ -43,9 +43,9 @@ function Header() {
       <nav>
         <ul>
           <li><a href="#" onClick={(e) => { e.preventDefault(); navigateToHomeAndScroll('problem'); }}>Problem</a></li>
-          <li><a href="#" onClick={(e) => { e.preventDefault(); navigateToHomeAndScroll('solution'); }}>Løsningen</a></li>
-          <li><a href="#" onClick={(e) => { e.preventDefault(); navigateToHomeAndScroll('contact'); }}>Kontakt</a></li>
-          <li><Link to="/blog">Blogg</Link></li>
+          <li><a href="#" onClick={(e) => { e.preventDefault(); navigateToHomeAndScroll('solution'); }}>Solution</a></li>
+          <li><a href="#" onClick={(e) => { e.preventDefault(); navigateToHomeAndScroll('contact'); }}>Contact</a></li>
+          <li><Link to="/blog">Blog</Link></li>
           <li><Link to="/login">Login</Link></li>
         </ul>
       </nav>
