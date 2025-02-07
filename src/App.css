@@ -53,7 +53,7 @@ header nav ul li {
 header nav ul li a {
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 
 header nav ul li a:hover {
@@ -65,6 +65,9 @@ header nav ul li a:hover {
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center; 
+  align-items: center;  
 }
 .regndroper {
   position: absolute;
@@ -140,7 +143,7 @@ header nav ul li a:hover {
   position: relative;
   color: white;
   text-align: center;
-  padding: 50px 20px;
+  margin-bottom: 100px;
 }
 
 @keyframes fadeInFromCenter {
@@ -162,7 +165,7 @@ header nav ul li a:hover {
 
 
 .hero .plant, .hero .poly {
-  font-size: 144px;
+  font-size: 9rem;
   margin-left: 50px;
   margin-bottom: 10px;
   text-align: center;
@@ -174,7 +177,7 @@ header nav ul li a:hover {
 }
 
 .hero .middle-text {
-  font-size: 18.3px;
+  font-size: 1.2rem;
   font-family: 'Open Sans', sans-serif;
   font-weight: 200;
   margin: 0 10px;
@@ -277,7 +280,7 @@ header nav ul li a:hover {
 
 .icon p {
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.5s ease;
   font-size: 0.9rem;
   letter-spacing: 3px;
 }
@@ -285,6 +288,7 @@ header nav ul li a:hover {
 .icon > div:hover p {
   opacity: 1;
 }
+
 
 .icon > div:hover img,
 .icon > div:hover .icon-text {
@@ -344,7 +348,7 @@ header nav ul li a:hover {
 
 @keyframes movePotato {
   0% {
-      left: -100px; 
+      left: -10vw;
   }
   100% {
       left: 50%; 
@@ -368,7 +372,7 @@ header nav ul li a:hover {
       left: 50%; 
   }
   100% {
-      left: 100%; 
+      left: 110%; 
   }
 }
 
@@ -665,3 +669,153 @@ footer {
   text-align: center;
   padding: 20px;
 }
+@media only screen and (max-width: 480px) {
+  header {
+    padding: 0px 20px 0px 20px;
+  }
+  header nav ul li a {
+    font-size: 0.65rem;
+  }
+  header img{
+    height: 30px;
+    margin-top: 10px;
+  }
+  header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 0px;
+    letter-spacing: 1px;
+  }
+  .hero {
+    height: 100vh;
+    background-size: cover;
+  }
+  .hero .plant, .hero .poly{
+    font-size: 5.5rem;
+    letter-spacing: 15px;
+    margin-left: 0px;
+  }
+  .hero .middle-text{
+    font-size: 0.9rem;
+    letter-spacing: 10px;
+    margin-left: 5px;
+  }
+  .hero-text{
+    margin-top: 50%;
+  }
+  .content{
+    margin-left: 20px;
+    margin-bottom: 250px;
+  }
+  .login-container {
+    width: 90%;
+    padding: 20px;
+  }
+  .icon {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .icon img {
+    width: 120px;
+  }
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  .image-box{
+   margin: 20px 40px;
+  }
+  #problem{
+    height: auto;
+    margin: 20px 30px;
+  }
+  #problem p{
+    padding: 0px 20px;
+  }
+  #potato1 {
+    animation-delay: 0s;
+  }
+  
+  #corn2 {
+    animation-delay: 1.2s; 
+  }
+  
+  #potato3 {
+    animation-delay: 2s; 
+  }
+  #corn4 {
+    animation-delay: 3.2s;
+  }
+  
+  #potato5 {
+    animation-delay: 4s; 
+  }
+  
+  #corn6 {
+    animation-delay: 5.2s;
+  }
+  .icon p.visible {
+    opacity: 1;
+  }
+}
+
+/* Tablet (iPad, 481px til 768px) */
+@media only screen and (min-width: 481px) and (max-width: 1240px) {
+  header {
+    padding: 0 40px;
+  }
+  header {
+    padding: 0px 20px 0px 20px;
+  }
+  header nav ul li a {
+    font-size: 0.9rem;
+  }
+  header img{
+    height: 50px;
+    margin-top: 10px;
+  }
+  header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 0px;
+    letter-spacing: 1px;
+  }
+  .hero {
+    height: 100vh;
+  }
+  .hero .plant, .hero .poly{
+    font-size: 6rem;
+  }
+  .login-container {
+    width: 80%;
+    padding: 25px;
+  }
+  .icon {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .icon img {
+    width: 120px;
+  }
+  .icon p.visible {
+    opacity: 1;
+  }
+  .image-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  .image-box{
+   margin: 10px 20px;
+  }
+  #problem{
+    height: auto;
+    margin: 20px 30px;
+  }
+  #problem p{
+    padding: 0px 20px;
+  }
+}
+

@@ -5,7 +5,7 @@ USE blogdb;
 CREATE TABLE IF NOT EXISTS posts (
     id INT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(255) NOT NULL,
-    contentBlocks TEXT NOT NULL, -- 📌 Fjerner DEFAULT '[]'
+    contentBlocks TEXT NOT NULL, 
     imageSize INT NOT NULL DEFAULT 50,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );

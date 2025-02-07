@@ -9,7 +9,9 @@ function Hero() {
           <p className="middle-text">POLYESTER FROM FOOD WASTE</p>
           <span className="poly">POLY</span>
         </h1>
-        <div class="regndroper regndrop1"></div>
+      <button className='cta-btn'>learn more</button>
+      </div>
+      <div class="regndroper regndrop1"></div>
               <div class="regndroper regndrop2"></div>
               <div class="regndroper regndrop3"></div>
               <div class="regndroper regndrop4"></div>
@@ -18,8 +20,6 @@ function Hero() {
               <div class="regndroper regndrop7"></div>
               <div class="regndroper regndrop8"></div>
               <div class="regndroper regndrop9"></div>
-      <button className='cta-btn'>learn more</button>
-      </div>
     </section>
   );
 }

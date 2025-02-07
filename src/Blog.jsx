@@ -175,7 +175,6 @@ function Blog() {
                         style={{ width: `${block.imageSize || 50}%` }}
                       />
 
-                      {/* 🔥 Skyveknapp for **individuell** bildestørrelse */}
                       <input
                         type="range"
                         min="20"

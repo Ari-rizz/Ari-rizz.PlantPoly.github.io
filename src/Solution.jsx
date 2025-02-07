@@ -1,6 +1,41 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 function Solution() {
+  // Inline komponent for hvert ikon med tilhørende tekst
+  const IconItem = ({ imgSrc, alt, title, description }) => {
+    const ref = useRef(null);
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+            observer.unobserve(entry.target); // Stopp observering når elementet er synlig
+          }
+        },
+        { threshold: 0.75 } // 50% av elementet må være synlig
+      );
+      if (ref.current) {
+        observer.observe(ref.current);
+      }
+      return () => {
+        if (ref.current) {
+          observer.unobserve(ref.current);
+        }
+      };
+    }, []);
+
+    return (
+      <div ref={ref}>
+        <img src={imgSrc} alt={alt} />
+        <h3 className="icon-text">{title}</h3>
+        {/* Legg til klassen "visible" hvis isVisible er true */}
+        <p className={isVisible ? "visible" : ""}>{description}</p>
+      </div>
+    );
+  };
+
   return (
     <section id="solution">
       <h2>Solution</h2>
@@ -11,51 +46,36 @@ function Solution() {
         compromising performance. Here’s what sets us apart:
       </p>
       <div className="icon">
-       
-        <div>
-          <img src="/src/assets/recycle-icon.png" alt="Recycle icon" />
-          <h3 className="icon-text">Recycled Food</h3>
-          <p>
-            Our fabric is made from vegetable waste that would otherwise end up
-            in landfills, giving new life to food byproducts.
-          </p>
-        </div>
-        <div>
-          <img
-            className="icon-leaf"
-            src="/src/assets/leaf-icon.png"
-            alt="Leaf icon"
-          />
-          <h3 className="icon-text">Bio-Based Material</h3>
-          <p>
-            Our fabric is 80% bio-based, and we are actively developing a 100%
-            plant-based solution through ongoing research and innovation.
-          </p>
-        </div>
-        <div>
-          <img src="/src/assets/scale-icon.png" alt="Scale icon" />
-          <h3 className="icon-text">Carbon-Neutral</h3>
-          <p>
-            We are carbon neutral, providing a sustainable alternative to
-            recycled polyester, which still has a significant carbon footprint.
-          </p>
-        </div>
-        <div>
-        <img src="/src/assets/world-icon.png" alt="World icon" />
-          <h3 className="icon-text">Eco-Friendly</h3>
-          <p>
-            We are committed to making the world a greener place, one garment at
-            a time.
-          </p>
-        </div>
-        <div>
-          <img src="/src/assets/check-icon.png" alt="Check icon" />
-          <h3 className="icon-text">Quality Assured</h3>
-          <p>
-            Our fabric offers the same technical performance as traditional
-            polyester, without the environmental impact.
-          </p>
-        </div>
+        <IconItem 
+          imgSrc="/src/assets/recycle-icon.png"
+          alt="Recycle icon"
+          title="Recycled Food"
+          description="Our fabric is made from vegetable waste that would otherwise end up in landfills, giving new life to food byproducts."
+        />
+        <IconItem 
+          imgSrc="/src/assets/leaf-icon.png"
+          alt="Leaf icon"
+          title="Bio-Based Material"
+          description="Our fabric is 80% bio-based, and we are actively developing a 100% plant-based solution through ongoing research and innovation."
+        />
+        <IconItem 
+          imgSrc="/src/assets/scale-icon.png"
+          alt="Scale icon"
+          title="Carbon-Neutral"
+          description="We are carbon neutral, providing a sustainable alternative to recycled polyester, which still has a significant carbon footprint."
+        />
+        <IconItem 
+          imgSrc="/src/assets/world-icon.png"
+          alt="World icon"
+          title="Eco-Friendly"
+          description="We are committed to making the world a greener place, one garment at a time."
+        />
+        <IconItem 
+          imgSrc="/src/assets/check-icon.png"
+          alt="Check icon"
+          title="Quality Assured"
+          description="Our fabric offers the same technical performance as traditional polyester, without the environmental impact."
+        />
       </div>
     </section>
   );
