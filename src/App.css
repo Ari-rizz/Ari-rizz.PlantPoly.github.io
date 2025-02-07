@@ -510,7 +510,7 @@ option {
 #blog {
   width: 100vw;
   min-height: 100vh; /* 🔥 Sørger for at den dekker hele skjermen */
-  background: url(./assets/plantpic.jpg) no-repeat center center;
+  background: url(/assets/plantpic.jpg) no-repeat center center;
   background-size: cover;
   background-attachment: fixed; 
   position: relative;
