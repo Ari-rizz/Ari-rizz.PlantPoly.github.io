@@ -60,7 +60,7 @@ header nav ul li a:hover {
   text-decoration: underline;
 }
 .hero {
-  background-image: url(/src/assets/plantpic.jpg);
+  background-image: url(./assets/plantpic.jpg);
   height: 100vh;
   width: 100%;
   background-size: cover;
@@ -510,7 +510,7 @@ option {
 #blog {
   width: 100vw;
   min-height: 100vh; /* 🔥 Sørger for at den dekker hele skjermen */
-  background: url(/src/assets/plantpic.jpg) no-repeat center center;
+  background: url(./assets/plantpic.jpg) no-repeat center center;
   background-size: cover;
   background-attachment: fixed; 
   position: relative;
@@ -599,7 +599,7 @@ option {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(/src/assets/plantpic.jpg) no-repeat center center;
+  background: url(./assets/plantpic.jpg) no-repeat center center;
   background-size: cover;
   position: relative;
 }

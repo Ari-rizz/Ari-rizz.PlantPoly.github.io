@@ -38,7 +38,7 @@ function Header() {
   return (
     <header id="header" className={isVisible ? 'visible' : ''}>
       <div className="logo">
-        <Link to="/"><img src="/src/assets/logo.png" alt="PlantPoly logo" /></Link>
+        <Link to="/"><img src="./assets/logo.png" alt="PlantPoly logo" /></Link>
       </div>
       <nav>
         <ul>

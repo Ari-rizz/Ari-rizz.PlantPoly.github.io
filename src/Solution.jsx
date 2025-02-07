@@ -47,31 +47,31 @@ function Solution() {
       </p>
       <div className="icon">
         <IconItem 
-          imgSrc="/src/assets/recycle-icon.png"
+          imgSrc="./assets/recycle-icon.png"
           alt="Recycle icon"
           title="Recycled Food"
           description="Our fabric is made from vegetable waste that would otherwise end up in landfills, giving new life to food byproducts."
         />
         <IconItem 
-          imgSrc="/src/assets/leaf-icon.png"
+          imgSrc="./assets/leaf-icon.png"
           alt="Leaf icon"
           title="Bio-Based Material"
           description="Our fabric is 80% bio-based, and we are actively developing a 100% plant-based solution through ongoing research and innovation."
         />
         <IconItem 
-          imgSrc="/src/assets/scale-icon.png"
+          imgSrc="./assets/scale-icon.png"
           alt="Scale icon"
           title="Carbon-Neutral"
           description="We are carbon neutral, providing a sustainable alternative to recycled polyester, which still has a significant carbon footprint."
         />
         <IconItem 
-          imgSrc="/src/assets/world-icon.png"
+          imgSrc="./assets/world-icon.png"
           alt="World icon"
           title="Eco-Friendly"
           description="We are committed to making the world a greener place, one garment at a time."
         />
         <IconItem 
-          imgSrc="/src/assets/check-icon.png"
+          imgSrc="./assets/check-icon.png"
           alt="Check icon"
           title="Quality Assured"
           description="Our fabric offers the same technical performance as traditional polyester, without the environmental impact."

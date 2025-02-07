@@ -38,19 +38,19 @@ function Contact() {
         </form>
 
         <div className="animation-container">
-            <img src="/src/assets/potato.png" alt="Potato" className="potato" id="potato1" />
-            <img src="/src/assets/corn.png" alt="Corn" className="corn" id="corn2" />
-            <img src="/src/assets/potato.png" alt="Potato" className="potato" id="potato3" />
-            <img src="/src/assets/corn.png" alt="Corn" className="corn" id="corn4" />
-            <img src="/src/assets/potato.png" alt="Potato" className="potato" id="potato5" />
-            <img src="/src/assets/corn.png" alt="Corn" className="corn" id="corn6" />
-            <img src="/src/assets/factory.png" alt="Factory" className="factory" />
-            <img src="/src/assets/sweater.png" alt="Sweater" className="sweater" id="potato1" />
-            <img src="/src/assets/tshirt.png" alt="T-shirt" className="sweater" id="corn2" />
-            <img src="/src/assets/dress.png" alt="Dress" className="sweater" id="potato3" />
-            <img src="/src/assets/shoes.png" alt="Shoes" className="sweater" id="corn4" />
-            <img src="/src/assets/hat.png" alt="Hat" className="sweater" id="potato5" />
-            <img src="/src/assets/socks.png" alt="Socks" className="sweater" id="corn6" />
+            <img src="./assets/potato.png" alt="Potato" className="potato" id="potato1" />
+            <img src="./assets/corn.png" alt="Corn" className="corn" id="corn2" />
+            <img src="./assets/potato.png" alt="Potato" className="potato" id="potato3" />
+            <img src="./assets/corn.png" alt="Corn" className="corn" id="corn4" />
+            <img src="./assets/potato.png" alt="Potato" className="potato" id="potato5" />
+            <img src="./assets/corn.png" alt="Corn" className="corn" id="corn6" />
+            <img src="./assets/factory.png" alt="Factory" className="factory" />
+            <img src="./assets/sweater.png" alt="Sweater" className="sweater" id="potato1" />
+            <img src="./assets/tshirt.png" alt="T-shirt" className="sweater" id="corn2" />
+            <img src="./assets/dress.png" alt="Dress" className="sweater" id="potato3" />
+            <img src="./assets/shoes.png" alt="Shoes" className="sweater" id="corn4" />
+            <img src="./assets/hat.png" alt="Hat" className="sweater" id="potato5" />
+            <img src="./assets/socks.png" alt="Socks" className="sweater" id="corn6" />
         </div>
     </section>
   );
