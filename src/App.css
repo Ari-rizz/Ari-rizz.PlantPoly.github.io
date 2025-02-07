@@ -599,7 +599,7 @@ option {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(./assets/plantpic.jpg) no-repeat center center;
+  background: url(/assets/plantpic.jpg) no-repeat center center;
   background-size: cover;
   position: relative;
 }
