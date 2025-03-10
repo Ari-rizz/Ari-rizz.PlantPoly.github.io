@@ -9,7 +9,7 @@ function Hero() {
           <p className="middle-text">POLYESTER FROM FOOD WASTE</p>
           <span className="poly">POLY</span>
         </h1>
-      <button className='cta-btn'>learn more</button>
+      <button className='cta-btn'><a href="#problem">learn more</a></button>
       </div>
       <div class="regndroper regndrop1"></div>
               <div class="regndroper regndrop2"></div>

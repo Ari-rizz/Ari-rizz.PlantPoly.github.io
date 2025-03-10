@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, forwardRef } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import "./App.css";
@@ -139,6 +139,7 @@ function Blog() {
 </div>
       <div className="blog-header">
         <h2 className="blog-title">Blogg</h2>
+        <button className="loginbtn"><Link className="login" to="/login">Sign inn</Link></button>
       </div>
       {isAuthenticated && (
         <div className="blog-form">

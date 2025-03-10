@@ -459,7 +459,7 @@ textarea {
   resize: vertical;
 }
 
-button.cta-btn {
+button.cta-btn, .loginbtn {
   background-color: #3c9d6e;
   color: #fff;
   font-size: 18px;
@@ -468,9 +468,14 @@ button.cta-btn {
   border-radius: 25px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+
+}
+.cta-btn a, .login{
+  text-decoration: none;
+  color: #ffffff;
 }
 
-button.cta-btn:hover {
+button.cta-btn:hover, .loginbtn:hover {
   background-color: #2e8b57;
 }
 
@@ -505,6 +510,7 @@ select:focus {
 
 option {
   padding: 10px;
+  color: black;
 }
 .blog-rain {
   position: absolute;
@@ -556,7 +562,10 @@ option {
   backdrop-filter: blur(8px); 
   background: rgba(0, 0, 0, 0.4); 
 }
-
+.loginbtn{
+  position: relative;
+  z-index: 2;
+}
 .blog-title {
   font-size: 3rem;
   font-weight: bold;

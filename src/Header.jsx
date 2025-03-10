@@ -46,7 +46,6 @@ function Header() {
           <li><a href="#" onClick={(e) => { e.preventDefault(); navigateToHomeAndScroll('solution'); }}>Solution</a></li>
           <li><a href="#" onClick={(e) => { e.preventDefault(); navigateToHomeAndScroll('contact'); }}>Contact</a></li>
           <li><Link to="/blog">Blog</Link></li>
-          <li><Link to="/login">Login</Link></li>
         </ul>
       </nav>
     </header>
