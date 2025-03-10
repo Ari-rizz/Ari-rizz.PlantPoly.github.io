@@ -21,7 +21,6 @@ app.use(cors());
 app.use(express.json());
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
-// 📌 Tilkobling til databasen ved hjelp av miljøvariabler
 const db = await mysql.createConnection({
   host: process.env.DB_HOST,
   user: process.env.DB_USER,
@@ -29,7 +28,6 @@ const db = await mysql.createConnection({
   database: process.env.DB_DATABASE,
 });
 
-// 📌 Konfigurer multer for filopplastning
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     cb(null, path.join(__dirname, 'uploads'));

@@ -172,7 +172,7 @@ header nav ul li a:hover {
   white-space: nowrap;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 40px;
-  color: #2e8b57;
+  color: #0c7b47;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); 
 }
 
@@ -195,6 +195,20 @@ header nav ul li a:hover {
 }
 #problem p{
   padding: 0px 80px;
+}
+#problem h2, #solution h2{
+  letter-spacing: 13px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #11dc7d;
+}
+#problem h3{
+  letter-spacing: 13px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #11dc7d;
+  text-shadow:5px 5px #112926;
 }
 #solution{
   text-align: center;
@@ -225,8 +239,22 @@ header nav ul li a:hover {
   height: 100%;
   object-fit: cover;
 }
+.image-headline{ 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  opacity: 1;
+}
 
-.image-text {
+.image-box:hover .image-headline {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.image-text{
   position: absolute;
   top: 50%;
   left: 50%;
